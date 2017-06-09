@@ -1,0 +1,15 @@
+{
+  "apps" : [{
+    "name" : "cms",  
+    "script": "./dist/server.js", 
+    "instance": "max",
+    "exec_mode" : "cluster",
+    "cwd": "./",           
+    "watch":[
+      "dist"
+	  ],
+    "error_file":"./logs/app-err.log",
+    "out_file":"./logs/app-out.log",
+    "log_date_format":"YYYY-MM-DD HH:mm Z"
+  }]
+}
